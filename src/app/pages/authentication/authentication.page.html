@@ -1,17 +1,22 @@
+
+
 <ion-header>
   <!-- Header content here -->
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-item>
-    <ion-label position="stacked">Username</ion-label>
-    <ion-input [(ngModel)]="username" type="text" required></ion-input>
-  </ion-item>
+  <div class="container">
+    <div class="authentication-title">Authentication</div>
+    <ion-item>
+      <ion-label position="stacked">Username</ion-label>
+      <ion-input [(ngModel)]="username" type="text" required></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-label position="stacked">Password</ion-label>
-    <ion-input [(ngModel)]="password" type="password" required></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input [(ngModel)]="password" type="password" required></ion-input>
+    </ion-item>
 
-  <ion-button expand="full" (click)="login()">Login</ion-button>
+    <ion-button expand="full" (click)="login()">Login</ion-button>
+  </div>
 </ion-content>

@@ -1,0 +1,73 @@
+
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    ion-item {
+      margin-bottom: 16px;
+    }
+  }
+
+.container {
+    width: 732px;
+    height: 650px;
+    position: absolute;
+    top: 117px; /* Adjusted the top margin from 117px to 167px */
+    left: 50%; /* Center the container horizontally */
+    transform: translateX(-50%); /* Center the container horizontally */
+    background: linear-gradient(180deg, #1B3645 0%, #03242F 100%);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .authentication-title {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px; /* Added margin-bottom to separate title from input fields */
+  }
+  
+  /* Style for ion-item (Username and Password) */
+  ion-item {
+    width: 558px;
+    height: 56px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    gap: 16px;
+  }
+  
+  /* Style for ion-input inside ion-item */
+  ion-input {
+    --padding-start: 0;
+  }
+  
+  /* Style for ion-button */
+  ion-button {
+    width: 558px;
+    margin-top: 16px;
+    --background: #F8FF13;
+    --background-hover: #f5fd0b;
+    --background-activated: #f6ff00;
+    color: #000000;
+    height: 50px;
+    border-radius: 12px;
+
+  }
+  
+  /* Style for ion-label inside ion-item */
+  ion-label {
+    color: #fff;
+  }
+  
+  /* Style for ion-content */
+  
+  
+  
