@@ -12,12 +12,13 @@ export class AuthenticationPage {
   constructor() {}
 
   login() {
-    // Check if username and password are correct (hardcoded for now)
-    if (this.username === 'your_username' && this.password === 'your_password') {
-      // Navigate to the main page if login is successful
-      // Add the necessary navigation code here
-    } else {
-      // Show an error message for invalid credentials
-    }
+          // Check if username and password are correct (hardcoded for now)
+      if (this.username === 'your_username' && this.password === 'your_password') {
+        // Navigate to the main page if login is successful
+        // Add the necessary navigation code here
+      } else {
+        // Show an error message for invalid credentials
+      }
   }
 }
+

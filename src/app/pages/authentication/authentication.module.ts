@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { IonicModule } from '@ionic/angular';
+import { FormsModule } from '@angular/forms'; // Import the FormsModule
+
 import { AuthenticationPage } from './authentication.page';
 
 @NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    RouterModule.forChild([{ path: '', component: AuthenticationPage }]),
-  ],
   declarations: [AuthenticationPage],
+  imports: [CommonModule, IonicModule, FormsModule], // Add FormsModule here
 })
 export class AuthenticationPageModule {}
