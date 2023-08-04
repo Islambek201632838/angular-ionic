@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-authentication',
@@ -9,16 +10,15 @@ export class AuthenticationPage {
   username: string = '';
   password: string = '';
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   login() {
-          // Check if username and password are correct (hardcoded for now)
-      if (this.username === 'your_username' && this.password === 'your_password') {
-        // Navigate to the main page if login is successful
-        // Add the necessary navigation code here
-      } else {
-        // Show an error message for invalid credentials
-      }
+    // Check if username and password are correct (hardcoded for now)
+    if (this.username === 'username' && this.password === 'password') {
+      // Navigate to the main page if login is successful
+      this.router.navigate(['/main']);
+    } else {
+      // Show an error message for invalid credentials
+    }
   }
 }
-
