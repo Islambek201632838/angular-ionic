@@ -7,21 +7,32 @@ This is a simple Ionic Contacts App that allows users to view and interact with 
 ## Installation
 
 To download the project, run the following command:
+git clone https://github.com/Islambek201632838/angular-ionic.git
 
 
 Next, navigate to the project directory:
-
+cd islambek
 
 Then, install the required dependencies:
+npm install
+
+if modules are not downloaded run this commands:
+
+npm install -g @angular/cli
+npm install -g @ionic/cli
+npm install @ionic-native/contacts@latest --legacy -peer-deps
+npm install @ionic-native/barcode-scanner@latest --legacy -peer-deps
+npm install ionic-native/android-permissions/ngx@latest --legacy -peer-deps
 
 
 ## Running the App
 
 To start the development server and run the app, use the following command:
+ionic serve or ng serve
 
 
 After the development server has started, open your web browser and navigate to:
-
+http://localhost:8100 for ionic and http://localhost:4200 for angular
 
 You should see the app running in the browser.
 
